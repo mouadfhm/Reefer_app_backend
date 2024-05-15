@@ -23,7 +23,7 @@ class UserController
     public function index()
     {
         try {
-            $users = User::all();
+            $users = User::with('fonction')->get();
             return [
                 "payload" => $users,
                 "status" => 200

@@ -62,9 +62,9 @@ class HouseKeepingController
     public function update(Request $request)
     {
         $rules=[
-            'reefer_id'=>'required',
-            'plan_position'=>'required',
-            'hk_time'=>'required',
+            'reefer_id'=>'integer',
+            'plan_position'=>'string',
+            'hk_time'=>'date',
         ];
         $validator = Validator($request->all(), $rules);
         if ($validator->fails()) {
@@ -76,6 +76,22 @@ class HouseKeepingController
         try{
             $housekeeping=HouseKeeping::find($request->id);
             $housekeeping->update($request->all());
+            return [
+                "payload"=>$housekeeping,
+                "status"=>200
+            ];
+        }catch(\Exception $e){
+            return [
+                "error"=>$e->getMessage(),
+                "status"=>500
+            ];
+        }
+    }
+    public function delete(Request $request)
+    {
+        try{
+            $housekeeping=HouseKeeping::find($request->id);
+            $housekeeping->delete();
             return [
                 "payload"=>$housekeeping,
                 "status"=>200
