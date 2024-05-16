@@ -10,6 +10,7 @@ use App\Modules\Load\Models\Load;
 use App\Modules\Discharge\Models\Discharge;
 use App\Modules\Housekeeping\Models\Housekeeping;
 use App\Modules\Gate\Models\Gate;
+use App\Modules\Issue\Models\Issue;
 
 class Reefer extends Model
 {
@@ -49,5 +50,9 @@ class Reefer extends Model
     public function gate()
     {
         return $this->hasMany(Gate::class);
+    }
+    public function issue()
+    {
+        return $this->hasMany(Issue::class);
     }
 }

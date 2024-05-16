@@ -19,7 +19,7 @@ class ReeferController
     }
     public function index(){
         try{
-            $reefers=Reefer::with('vessel')->get();
+            $reefers=Reefer::with('vessel','issue')->get();
             return [
                 "payload"=>$reefers,
                 "status"=>200
