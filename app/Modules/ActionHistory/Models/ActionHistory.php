@@ -16,9 +16,10 @@ class ActionHistory extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'action_id',
+        'id',
         'user_id',
-        'HK_id',
+        'reefer_id',
+        'housekeeping_id',
         'type',
     ];
 }

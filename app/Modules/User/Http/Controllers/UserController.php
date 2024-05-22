@@ -113,21 +113,8 @@ class UserController
     {
         $id = $request->input("id");
         $user = User::findOrFail($id);
-        $rules = [
-            'matricule' => 'string|unique:users|max:255',
-            'firstname' => 'string|max:255',
-            'lastname' => 'string|max:255',
-            'email' => 'string|email|max:255|unique:users',
-            'fonction_id' => 'integer|max:255',
-            'active' => 'integer|between:0,1',
-        ];
-        $validator = Validator($request->all(), $rules);
-        if ($validator->fails()) {
-            return [
-                "error" => $validator->errors()->all(),
-                "status" => 422
-            ];
-        }
+        
+        
         try {
             $user->update($request->all());
             return [

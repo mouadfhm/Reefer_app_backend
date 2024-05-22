@@ -15,8 +15,9 @@ class CreateActionHistoriesTable extends Migration
         Schema::create('action_histories', function (Blueprint $table) {
             $table->id('id');
             $table->foreignId('user_id')->constrained('users');
-            $table->foreignId('housekeeping_id')->constrained('housekeeping');
-            $table->string('type');
+            $table->foreignId('housekeeping_id')->constrained('housekeeping') ->nullable();
+            $table->foreignId('reefer_id')->constrained('reefers') ->nullable();
+            $table->string('type') ;
             $table->timestamps();
         });
     }

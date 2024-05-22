@@ -5,3 +5,5 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/api/load/', [LoadController::class, 'index']);
+
+Route::post('/api/load/byvessel', [LoadController::class, 'getLoads']);

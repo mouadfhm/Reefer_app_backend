@@ -32,5 +32,31 @@ class LoadController
             ];
         }
     }
+    public function getLoads(Request $request)
+    {
+        $rules=[
+            'vessel_id'=>'required|integer'
+        ];
+        $validator = Validator($request->all(), $rules);
+        if ($validator->fails()) {
+            return [
+                "error" => $validator->errors()->all(),
+                "status" => 422
+            ];
+        }
+
+        try{
+            $loads=Load::where('vessel_id',$request->vessel_id)->with('reefer')->get();
+            return [
+                "payload"=>$loads,
+                "status"=>200
+            ];
+        }catch(\Exception $e){
+            return [
+                "error"=>$e->getMessage(),
+                "status"=>500
+            ];
+        }
+    }
 
 }
