@@ -52,9 +52,9 @@ class ActionHistoryController
         try {
             $reefer = Reefer::find($request->reefer_id);
             if ($reefer->plug_status === 'plugged') {
-                $type = 'unplug';
-            }elseif ($reefer->plug_status === 'unplugged') {
                 $type = 'plug';
+            }elseif ($reefer->plug_status === 'unplugged') {
+                $type = 'unplug';
             };
 
             $action = ActionHistory::create([
