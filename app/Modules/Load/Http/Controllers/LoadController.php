@@ -46,7 +46,10 @@ class LoadController
         }
 
         try{
-            $loads=Load::where('vessel_id',$request->vessel_id)->with('reefer')->get();
+            $loads=Load::where('vessel_id',$request->vessel_id,)->with(['reefer', 'reefer.actionHistory' => function($query) {
+                $query->orderBy('created_at', 'desc');
+            }])
+            ->get();
             return [
                 "payload"=>$loads,
                 "status"=>200

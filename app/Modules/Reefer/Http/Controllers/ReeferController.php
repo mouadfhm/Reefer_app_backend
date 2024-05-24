@@ -17,19 +17,38 @@ class ReeferController
     {
         return view("Reefer::welcome");
     }
-    public function index(){
-        try{
-            $reefers=Reefer::with('vessel','issue')->get();
+    public function index()
+    {
+        try {
+            $reefers = Reefer::with('vessel', 'issue')->get();
             return [
-                "payload"=>$reefers,
-                "status"=>200
+                "payload" => $reefers,
+                "status" => 200
             ];
-        }catch(\Exception $e){
+        } catch (\Exception $e) {
             return [
-                "error"=>$e->getMessage(),
-                "status"=>500
+                "error" => $e->getMessage(),
+                "status" => 500
             ];
         }
     }
+    public function changeStatus(Request $request)
+    {
+        $reefer = Reefer::find($request->id);
+        try {
+            // Check if the plug_status is 'plugged', if so, change it to 'unplugged', and vice versa
+            $reefer->plug_status = $reefer->plug_status === 'plugged' ? 'unplugged' : 'plugged';
+            $reefer->save();
+            return [
+                "payload" => $reefer,
+                "status" => 200
+            ];
 
+        } catch (\Exception $e) {
+            return [
+                "payload" => $reefer,
+                "status" => 500
+            ];
+        }
+    }
 }

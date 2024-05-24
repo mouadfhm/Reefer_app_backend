@@ -2,6 +2,7 @@
 
 namespace App\Modules\Reefer\Models;
 
+use App\Modules\ActionHistory\Models\ActionHistory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
@@ -55,4 +56,9 @@ class Reefer extends Model
     {
         return $this->hasMany(Issue::class);
     }
+    public function actionHistory()
+    {
+        return $this->hasMany(ActionHistory::class);
+    }
+
 }

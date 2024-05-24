@@ -3,6 +3,7 @@
 namespace App\Modules\ActionHistory\Http\Controllers;
 
 use App\Modules\ActionHistory\Models\ActionHistory;
+use App\Modules\Reefer\Models\Reefer;
 use Illuminate\Http\Request;
 use Illuminate\Notifications\Action;
 
@@ -39,7 +40,7 @@ class ActionHistoryController
             'user_id' => 'required|integer|max:255',
             'reefer_id' => 'integer|max:255',
             'housekeeping_id' => 'integer|max:255',
-            'type' => 'required|string|max:255',
+            'type' => 'string|max:255',
         ];
         $validator = Validator($request->all(), $rules);
         if ($validator->fails()) {
@@ -49,11 +50,18 @@ class ActionHistoryController
             ];
         }
         try {
+            $reefer = Reefer::find($request->reefer_id);
+            if ($reefer->plug_status === 'plugged') {
+                $type = 'unplug';
+            }elseif ($reefer->plug_status === 'unplugged') {
+                $type = 'plug';
+            };
+
             $action = ActionHistory::create([
                 'user_id' => $request->user_id,
                 'reefer_id' => $request->reefer_id,
                 'housekeeping_id' => $request->housekeeping_id,
-                'type' => $request->type
+                'type' => $type
             ]);
             return [
                 "payload" => $action,
