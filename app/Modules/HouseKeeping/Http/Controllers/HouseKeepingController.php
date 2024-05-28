@@ -32,12 +32,31 @@ class HouseKeepingController
             ];
         }
     }
+    public function getHouseKeeping(Request $request)
+    {
+        try{
+            $housekeeping=HouseKeeping::with(['reefer', 'reefer.actionHistory' => function($query) {
+                $query->orderBy('created_at', 'desc');
+            }])
+            ->get();
+            return [
+                "payload"=>$housekeeping,
+                "status"=>200
+            ];
+        }catch(\Exception $e){
+            return [
+                "error"=>$e->getMessage(),
+                "status"=>500
+            ];
+        }
+    }
+
     public function add(Request $request)
     {
         $rules=[
             'reefer_id'=>'required',
             'plan_position'=>'required',
-            'hk_time'=>'required',
+            'HK_time'=>'required',
         ];
         $validator = Validator($request->all(), $rules);
         if ($validator->fails()) {
@@ -64,7 +83,7 @@ class HouseKeepingController
         $rules=[
             'reefer_id'=>'integer',
             'plan_position'=>'string',
-            'hk_time'=>'date',
+            'HK_time'=>'date',
         ];
         $validator = Validator($request->all(), $rules);
         if ($validator->fails()) {

@@ -17,6 +17,20 @@ class IssueController
     {
         return view("Issue::welcome");
     }
+    public function index(){
+        try{
+            $issues=Issue::all();
+            return [
+                "payload"=>$issues,
+                "status"=>200
+            ];
+        }catch(\Exception $e){
+            return [
+                "error"=>$e->getMessage(),
+                "status"=>500
+            ];
+        }
+    }
     public function add(Request $request)
     {
         $rules=[
@@ -31,7 +45,10 @@ class IssueController
             ];
         }
         try{
-            $issue=Issue::create($request->all());
+            $issue=Issue::create([
+                'reefer_id'=>$request->reefer_id,
+                'type'=>$request->type
+            ]);
             return [
                 "payload"=>$issue,
                 "status"=>200

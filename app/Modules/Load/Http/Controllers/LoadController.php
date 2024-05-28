@@ -4,6 +4,9 @@ namespace App\Modules\Load\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Modules\Load\Models\Load;
+use App\Modules\Reefer\Models\Reefer;
+use App\Notifications\ReeferReadyForLoading;
+use Illuminate\Support\Facades\Notification ;
 
 class LoadController
 {
@@ -61,5 +64,26 @@ class LoadController
             ];
         }
     }
+
+public function checkReeferStatus()
+{
+    $reefers = Reefer::where('plug_status', 'unplugged')->get();
+    
+    foreach ($reefers as $reefer) {
+        $estimatedLoadTime = new \DateTime($reefer->estimated_time);
+        $actionHistory = $reefer->action_history()->orderBy('created_at', 'desc')->first();
+
+        if ($actionHistory) {
+            $createdAt = new \DateTime($actionHistory->created_at);
+            $interval = $estimatedLoadTime->diff($createdAt);
+
+            // Check if unplugged within 2 hours of estimated load time
+            if ($interval->h > 2) {
+                Notification::send($reefer->user, new ReeferReadyForLoading($reefer));
+            }
+        }
+    }
+}
+
 
 }

@@ -32,5 +32,34 @@ class DischargeController
             ];
         }
     }
+    public function getDischarges(Request $request)
+    {
+        $rules=[
+            'vessel_id'=>'required|integer'
+        ];
+        $validator = Validator($request->all(), $rules);
+        if ($validator->fails()) {
+            return [
+                "error" => $validator->errors()->all(),
+                "status" => 422
+            ];
+        }
+
+        try{
+            $discharge=Discharge::where('vessel_id',$request->vessel_id,)->with(['reefer', 'reefer.actionHistory' => function($query) {
+                $query->orderBy('created_at', 'desc');
+            }])
+            ->get();
+            return [
+                "payload"=>$discharge,
+                "status"=>200
+            ];
+        }catch(\Exception $e){
+            return [
+                "error"=>$e->getMessage(),
+                "status"=>500
+            ];
+        }
+    }
 
 }

@@ -28,4 +28,8 @@ class HouseKeeping extends Model
     {
         return $this->belongsTo(Reefer::class);
     }
+
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d H:00',
+    ];
 }
