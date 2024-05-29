@@ -4,4 +4,13 @@ use App\Modules\Fonction\Http\Controllers\FonctionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/api/fonction/', [FonctionController::class, 'index']);
+Route::group(
+    [
+        'middleware' => 'auth:sanctum',
+        'prefix' => 'api'
+    ],
+    function ($router) {
+
+        Route::get('/fonction', [FonctionController::class, 'index']);
+    }
+);

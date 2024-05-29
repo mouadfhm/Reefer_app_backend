@@ -4,6 +4,14 @@ use App\Modules\Load\Http\Controllers\LoadController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/api/load/', [LoadController::class, 'index']);
+Route::group(
+    [
+        'middleware' => 'auth:sanctum',
+        'prefix' => 'api'
+    ],
+    function ($router) {
 
-Route::post('/api/load/byvessel', [LoadController::class, 'getLoads']);
+        Route::get('/load', [LoadController::class, 'index']);
+        Route::post('/load/byvessel', [LoadController::class, 'getLoads']);
+    }
+);
