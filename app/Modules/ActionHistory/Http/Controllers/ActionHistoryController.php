@@ -39,7 +39,6 @@ class ActionHistoryController
         $rules = [
             'user_id' => 'required|integer|max:255',
             'reefer_id' => 'integer|max:255',
-            'housekeeping_id' => 'integer|max:255',
             'type' => 'string|max:255',
         ];
         $validator = Validator($request->all(), $rules);
@@ -60,8 +59,41 @@ class ActionHistoryController
             $action = ActionHistory::create([
                 'user_id' => $request->user_id,
                 'reefer_id' => $request->reefer_id,
-                'housekeeping_id' => $request->housekeeping_id,
                 'type' => $type
+            ]);
+            return [
+                "payload" => $action,
+                "status" => 201,
+                "message" => "action history created successfully"
+            ];
+        } catch (\Exception $e) {
+            return [
+                "error" => $e->getMessage(),
+                "status" => 500
+            ];
+        }
+    }
+    public function add_hk(Request $request)
+    {
+        $rules = [
+            'user_id' => 'required|integer|max:255',
+            'reefer_id' => 'required|integer|max:255',
+            'housekeeping_id' => 'required|integer|max:255',
+            'type' => 'required|string|max:255',
+        ];
+        $validator = Validator($request->all(), $rules);
+        if ($validator->fails()) {
+            return [
+                "error" => $validator->errors()->all(),
+                "status" => 422
+            ];
+        }
+        try {
+            $action = ActionHistory::create([
+                'user_id' => $request->user_id,
+                'reefer_id' => $request->reefer_id,
+                'housekeeping_id' => $request->housekeeping_id,
+                'type' => $request->type
             ]);
             return [
                 "payload" => $action,

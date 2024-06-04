@@ -13,6 +13,8 @@ Route::group(
 
 Route::get('/actions', [ActionHistoryController::class, 'index']);
 Route::post('/actions/add', [ActionHistoryController::class, 'add']);
+Route::post('/actions/addHouseKeeping', [ActionHistoryController::class, 'add_hk']);
+
 
     }
 );

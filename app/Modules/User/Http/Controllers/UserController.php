@@ -91,6 +91,7 @@ class UserController
             if (Auth::attempt($request->only('matricule', 'password'))) {
                 $user = Auth::user();
                 $token = $user->createToken('token')->plainTextToken;
+                $user->load('fonction');
 
                 return [
                     "payload" => ['user' => $user, 'token' => $token],

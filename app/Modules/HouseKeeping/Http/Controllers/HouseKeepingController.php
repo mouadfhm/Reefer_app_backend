@@ -83,7 +83,6 @@ class HouseKeepingController
         $rules=[
             'reefer_id'=>'integer',
             'plan_position'=>'string',
-            'HK_time'=>'date',
         ];
         $validator = Validator($request->all(), $rules);
         if ($validator->fails()) {
