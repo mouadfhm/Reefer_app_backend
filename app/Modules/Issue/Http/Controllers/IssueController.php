@@ -17,25 +17,26 @@ class IssueController
     {
         return view("Issue::welcome");
     }
-    public function index(){
-        try{
-            $issues=Issue::all();
+    public function index()
+    {
+        try {
+            $issues = Issue::all();
             return [
-                "payload"=>$issues,
-                "status"=>200
+                "payload" => $issues,
+                "status" => 200
             ];
-        }catch(\Exception $e){
+        } catch (\Exception $e) {
             return [
-                "error"=>$e->getMessage(),
-                "status"=>500
+                "error" => $e->getMessage(),
+                "status" => 500
             ];
         }
     }
     public function add(Request $request)
     {
-        $rules=[
-            'reefer_id'=>'required',
-            'type'=>'required',
+        $rules = [
+            'reefer_id' => 'required',
+            'type' => 'required',
         ];
         $validator = Validator($request->all(), $rules);
         if ($validator->fails()) {
@@ -44,19 +45,38 @@ class IssueController
                 "status" => 422
             ];
         }
-        try{
-            $issue=Issue::create([
-                'reefer_id'=>$request->reefer_id,
-                'type'=>$request->type
+        try {
+            $issue = Issue::create([
+                'reefer_id' => $request->reefer_id,
+                'type' => $request->type
             ]);
             return [
-                "payload"=>$issue,
-                "status"=>200
+                "payload" => $issue,
+                "status" => 200
             ];
-        }catch(\Exception $e){
+        } catch (\Exception $e) {
             return [
-                "error"=>$e->getMessage(),
-                "status"=>500
+                "error" => $e->getMessage(),
+                "status" => 500
+            ];
+        }
+    }
+    public function firstTier(Request $request)
+    {
+
+        $param1 = 'fahimimouad60@gmail.com';
+        $param2 = 'This reefer ' . $request->reefer_id . ' has an issue : ' . $request->type . '. Please check it.';
+        try {
+            $command = escapeshellcmd("python3 ../myenv/Scripts/Mail.py --recipient_email $param1 --body " . escapeshellarg($param2));
+            $output = shell_exec($command);
+            return [
+                "payload" => $output,
+                "status" => 200
+            ];
+        } catch (\Exception $e) {
+            return [
+                "error" => $e->getMessage(),
+                "status" => 500
             ];
         }
     }

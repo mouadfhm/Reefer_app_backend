@@ -3236,3 +3236,755 @@ Did you mean this?
 #39 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\fahim\\\\...')
 #40 {main}
 "} 
+[2024-06-05 09:54:48] local.ERROR: Non-static method Illuminate\Console\Scheduling\Schedule::call() cannot be called statically {"exception":"[object] (Error(code: 0): Non-static method Illuminate\\Console\\Scheduling\\Schedule::call() cannot be called statically at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\routes\\console.php:11)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(499): require()
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(479): Illuminate\\Foundation\\Console\\Kernel->discoverCommands()
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(194): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1187): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2024-06-05 10:09:32] local.ERROR: Route [login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [login] not defined. at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:497)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(831): Illuminate\\Routing\\UrlGenerator->route('login', Array, true)
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(231): route('login')
+#2 [internal function]: Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(118): call_user_func(Object(Closure), Object(Illuminate\\Http\\Request))
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(105): Illuminate\\Auth\\Middleware\\Authenticate->redirectTo(Object(Illuminate\\Http\\Request))
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(88): Illuminate\\Auth\\Middleware\\Authenticate->unauthenticated(Object(Illuminate\\Http\\Request), Array)
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(62): Illuminate\\Auth\\Middleware\\Authenticate->authenticate(Object(Illuminate\\Http\\Request), Array)
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1172): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\fahim\\\\...')
+#35 {main}
+"} 
+[2024-06-05 10:10:18] local.ERROR: Call to undefined method App\Modules\Reefer\Models\Reefer::action_history() {"userId":2,"exception":"[object] (BadMethodCallException(code: 0): Call to undefined method App\\Modules\\Reefer\\Models\\Reefer::action_history() at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php:67)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(36): Illuminate\\Database\\Eloquent\\Model::throwBadMethodCallException('action_history')
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2340): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'action_history', Array)
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\Load\\Http\\Controllers\\LoadController.php(74): Illuminate\\Database\\Eloquent\\Model->__call('action_history', Array)
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(46): App\\Modules\\Load\\Http\\Controllers\\LoadController->reeferUnplugged4Hours()
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Modules\\Load\\Http\\Controllers\\LoadController), 'reeferUnplugged...')
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(206): Illuminate\\Routing\\Route->runController()
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#16 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1172): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\fahim\\\\...')
+#39 {main}
+"} 
+[2024-06-05 10:19:34] local.ERROR: Call to undefined method App\Modules\Reefer\Models\Reefer::action_history() {"exception":"[object] (BadMethodCallException(code: 0): Call to undefined method App\\Modules\\Reefer\\Models\\Reefer::action_history() at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php:67)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(36): Illuminate\\Database\\Eloquent\\Model::throwBadMethodCallException('action_history')
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2340): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'action_history', Array)
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Console\\Commands\\CheckReefers.php(42): Illuminate\\Database\\Eloquent\\Model->__call('action_history', Array)
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Console\\Commands\\CheckReefers.php(16): App\\Console\\Commands\\CheckReefers->reeferUnplugged4Hours()
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CheckReefers->handle()
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(212): Illuminate\\Container\\Container->call(Array)
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php(1049): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php(318): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CheckReefers), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php(169): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(196): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1187): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#18 {main}
+"} 
+[2024-06-05 10:49:23] local.ERROR: Property [id] does not exist on this collection instance. {"exception":"[object] (Exception(code: 0): Property [id] does not exist on this collection instance. at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Collections\\Traits\\EnumeratesValues.php:1012)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Console\\Commands\\CheckReefers.php(29): Illuminate\\Support\\Collection->__get('id')
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Console\\Commands\\CheckReefers.php(15): App\\Console\\Commands\\CheckReefers->reeferReadyForLoading()
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CheckReefers->handle()
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(212): Illuminate\\Container\\Container->call(Array)
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php(1049): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php(318): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CheckReefers), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php(169): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(196): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1187): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#16 {main}
+"} 
+[2024-06-05 10:50:10] local.ERROR: Unsupported operand types: string + int {"exception":"[object] (TypeError(code: 0): Unsupported operand types: string + int at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Console\\Commands\\CheckReefers.php:29)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Console\\Commands\\CheckReefers.php(15): App\\Console\\Commands\\CheckReefers->reeferReadyForLoading()
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CheckReefers->handle()
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(212): Illuminate\\Container\\Container->call(Array)
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php(1049): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php(318): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CheckReefers), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php(169): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(196): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1187): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#15 {main}
+"} 
+[2024-06-05 10:51:44] local.ERROR: Unsupported operand types: string + int {"exception":"[object] (TypeError(code: 0): Unsupported operand types: string + int at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Console\\Commands\\CheckReefers.php:50)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Console\\Commands\\CheckReefers.php(16): App\\Console\\Commands\\CheckReefers->reeferUnplugged4Hours()
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CheckReefers->handle()
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(212): Illuminate\\Container\\Container->call(Array)
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php(1049): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php(318): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CheckReefers), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php(169): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(196): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1187): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#15 {main}
+"} 
+[2024-06-05 13:00:40] local.INFO: CheckReefers command started  
+[2024-06-05 13:00:44] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-05 13:00:46] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-05 13:00:47] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-05 13:00:49] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-05 13:00:51] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-05 13:00:53] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-05 13:00:55] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-05 13:00:57] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-05 13:00:57] local.INFO: CheckReefers command completed  
+[2024-06-05 15:04:26] local.INFO: CheckReefers command started  
+[2024-06-05 15:04:29] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-05 15:04:31] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-05 15:04:33] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-05 15:04:36] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-05 15:04:38] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-05 15:04:40] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-05 15:04:42] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-05 15:04:42] local.INFO: CheckReefers command completed  
+[2024-06-05 15:22:36] local.ERROR: App\Modules\HouseKeeping\Http\Controllers\HouseKeepingController::mail(): Argument #1 ($request) must be of type Illuminate\Http\Request, App\Modules\HouseKeeping\Models\HouseKeeping given, called in C:\Users\fahim\OneDrive\Documents\PFE\Reefer_App_Backend\app\Modules\HouseKeeping\Http\Controllers\HouseKeepingController.php on line 98 {"userId":2,"exception":"[object] (TypeError(code: 0): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController::mail(): Argument #1 ($request) must be of type Illuminate\\Http\\Request, App\\Modules\\HouseKeeping\\Models\\HouseKeeping given, called in C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php on line 98 at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php:128)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php(98): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController->mail(Object(App\\Modules\\HouseKeeping\\Models\\HouseKeeping), 'updated')
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(46): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController->update(Object(Illuminate\\Http\\Request))
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController), 'update')
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(206): Illuminate\\Routing\\Route->runController()
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#33 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1172): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\fahim\\\\...')
+#37 {main}
+"} 
+[2024-06-05 15:26:04] local.ERROR: App\Modules\HouseKeeping\Http\Controllers\HouseKeepingController::mail(): Argument #1 ($request) must be of type Illuminate\Http\Request, App\Modules\HouseKeeping\Models\HouseKeeping given, called in C:\Users\fahim\OneDrive\Documents\PFE\Reefer_App_Backend\app\Modules\HouseKeeping\Http\Controllers\HouseKeepingController.php on line 98 {"userId":2,"exception":"[object] (TypeError(code: 0): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController::mail(): Argument #1 ($request) must be of type Illuminate\\Http\\Request, App\\Modules\\HouseKeeping\\Models\\HouseKeeping given, called in C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php on line 98 at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php:128)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php(98): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController->mail(Object(App\\Modules\\HouseKeeping\\Models\\HouseKeeping), 'updated')
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(46): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController->update(Object(Illuminate\\Http\\Request))
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController), 'update')
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(206): Illuminate\\Routing\\Route->runController()
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#33 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1172): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\fahim\\\\...')
+#37 {main}
+"} 
+[2024-06-05 15:26:51] local.ERROR: App\Modules\HouseKeeping\Http\Controllers\HouseKeepingController::mail(): Argument #1 ($request) must be of type Illuminate\Http\Request, App\Modules\HouseKeeping\Models\HouseKeeping given, called in C:\Users\fahim\OneDrive\Documents\PFE\Reefer_App_Backend\app\Modules\HouseKeeping\Http\Controllers\HouseKeepingController.php on line 98 {"userId":2,"exception":"[object] (TypeError(code: 0): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController::mail(): Argument #1 ($request) must be of type Illuminate\\Http\\Request, App\\Modules\\HouseKeeping\\Models\\HouseKeeping given, called in C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php on line 98 at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php:128)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php(98): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController->mail(Object(App\\Modules\\HouseKeeping\\Models\\HouseKeeping), 'updated')
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(46): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController->update(Object(Illuminate\\Http\\Request))
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController), 'update')
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(206): Illuminate\\Routing\\Route->runController()
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#33 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1172): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\fahim\\\\...')
+#37 {main}
+"} 
+[2024-06-05 15:43:35] local.ERROR: App\Modules\HouseKeeping\Http\Controllers\HouseKeepingController::mail(): Argument #1 ($request) must be of type Illuminate\Http\Request, App\Modules\HouseKeeping\Models\HouseKeeping given, called in C:\Users\fahim\OneDrive\Documents\PFE\Reefer_App_Backend\app\Modules\HouseKeeping\Http\Controllers\HouseKeepingController.php on line 70 {"userId":2,"exception":"[object] (TypeError(code: 0): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController::mail(): Argument #1 ($request) must be of type Illuminate\\Http\\Request, App\\Modules\\HouseKeeping\\Models\\HouseKeeping given, called in C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php on line 70 at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php:128)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php(70): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController->mail(Object(App\\Modules\\HouseKeeping\\Models\\HouseKeeping), 'added')
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(46): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController->add(Object(Illuminate\\Http\\Request))
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController), 'add')
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(206): Illuminate\\Routing\\Route->runController()
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#33 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1172): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\fahim\\\\...')
+#37 {main}
+"} 
+[2024-06-05 15:48:47] local.ERROR: App\Modules\HouseKeeping\Http\Controllers\HouseKeepingController::mail(): Argument #1 ($request) must be of type Illuminate\Http\Request, App\Modules\HouseKeeping\Models\HouseKeeping given, called in C:\Users\fahim\OneDrive\Documents\PFE\Reefer_App_Backend\app\Modules\HouseKeeping\Http\Controllers\HouseKeepingController.php on line 70 {"userId":2,"exception":"[object] (TypeError(code: 0): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController::mail(): Argument #1 ($request) must be of type Illuminate\\Http\\Request, App\\Modules\\HouseKeeping\\Models\\HouseKeeping given, called in C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php on line 70 at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php:128)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php(70): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController->mail(Object(App\\Modules\\HouseKeeping\\Models\\HouseKeeping), 'added')
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(46): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController->add(Object(Illuminate\\Http\\Request))
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController), 'add')
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(206): Illuminate\\Routing\\Route->runController()
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#33 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1172): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\fahim\\\\...')
+#37 {main}
+"} 
+[2024-06-06 12:31:46] local.ERROR: Too few arguments to function App\Modules\HouseKeeping\Http\Controllers\HouseKeepingController::houseKeepingMail(), 1 passed in C:\Users\fahim\OneDrive\Documents\PFE\Reefer_App_Backend\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php on line 46 and exactly 2 expected {"userId":2,"exception":"[object] (ArgumentCountError(code: 0): Too few arguments to function App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController::houseKeepingMail(), 1 passed in C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php on line 46 and exactly 2 expected at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php:125)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(46): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController->houseKeepingMail(Object(App\\Modules\\HouseKeeping\\Models\\HouseKeeping))
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController), 'houseKeepingMai...')
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(206): Illuminate\\Routing\\Route->runController()
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#32 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1172): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\fahim\\\\...')
+#36 {main}
+"} 
+[2024-06-06 12:56:51] local.ERROR: Too few arguments to function App\Modules\HouseKeeping\Http\Controllers\HouseKeepingController::houseKeepingMail(), 1 passed in C:\Users\fahim\OneDrive\Documents\PFE\Reefer_App_Backend\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php on line 46 and exactly 2 expected {"userId":2,"exception":"[object] (ArgumentCountError(code: 0): Too few arguments to function App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController::houseKeepingMail(), 1 passed in C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php on line 46 and exactly 2 expected at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php:125)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(46): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController->houseKeepingMail(Object(App\\Modules\\HouseKeeping\\Models\\HouseKeeping))
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController), 'houseKeepingMai...')
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(206): Illuminate\\Routing\\Route->runController()
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#32 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1172): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\fahim\\\\...')
+#36 {main}
+"} 
+[2024-06-06 13:01:04] local.ERROR: Too few arguments to function App\Modules\HouseKeeping\Http\Controllers\HouseKeepingController::houseKeepingMail(), 1 passed in C:\Users\fahim\OneDrive\Documents\PFE\Reefer_App_Backend\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php on line 46 and exactly 2 expected {"userId":2,"exception":"[object] (ArgumentCountError(code: 0): Too few arguments to function App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController::houseKeepingMail(), 1 passed in C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php on line 46 and exactly 2 expected at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\app\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController.php:125)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(46): App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController->houseKeepingMail(Object(App\\Modules\\HouseKeeping\\Models\\HouseKeeping))
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Modules\\HouseKeeping\\Http\\Controllers\\HouseKeepingController), 'houseKeepingMai...')
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(206): Illuminate\\Routing\\Route->runController()
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#32 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1172): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\fahim\\\\...')
+#36 {main}
+"} 
+[2024-06-06 13:09:44] local.ERROR: Route [login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [login] not defined. at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:497)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(831): Illuminate\\Routing\\UrlGenerator->route('login', Array, true)
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(231): route('login')
+#2 [internal function]: Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(118): call_user_func(Object(Closure), Object(Illuminate\\Http\\Request))
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(105): Illuminate\\Auth\\Middleware\\Authenticate->redirectTo(Object(Illuminate\\Http\\Request))
+#5 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(88): Illuminate\\Auth\\Middleware\\Authenticate->unauthenticated(Object(Illuminate\\Http\\Request), Array)
+#6 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(62): Illuminate\\Auth\\Middleware\\Authenticate->authenticate(Object(Illuminate\\Http\\Request), Array)
+#7 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#8 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#10 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#12 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1172): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\fahim\\\\...')
+#35 {main}
+"} 
+[2024-06-06 14:12:53] local.INFO: CheckReefers command started  
+[2024-06-06 14:12:53] local.INFO: Executed reeferReadyForLoading with output:   
+[2024-06-06 14:12:53] local.INFO: Executed reeferReadyForLoading with output:   
+[2024-06-06 14:12:54] local.INFO: Executed reeferReadyForLoading with output:   
+[2024-06-06 14:12:54] local.INFO: Executed reeferReadyForLoading with output:   
+[2024-06-06 14:12:54] local.INFO: Executed reeferUnplugged4Hours with output:   
+[2024-06-06 14:12:54] local.INFO: Executed reeferUnplugged4Hours with output:   
+[2024-06-06 14:12:54] local.INFO: Executed reeferUnplugged4Hours with output:   
+[2024-06-06 14:12:54] local.INFO: CheckReefers command completed  
+[2024-06-06 14:13:06] local.INFO: CheckReefers command started  
+[2024-06-06 14:13:07] local.INFO: Executed reeferReadyForLoading with output:   
+[2024-06-06 14:13:07] local.INFO: Executed reeferReadyForLoading with output:   
+[2024-06-06 14:13:07] local.INFO: Executed reeferReadyForLoading with output:   
+[2024-06-06 14:13:07] local.INFO: Executed reeferReadyForLoading with output:   
+[2024-06-06 14:13:07] local.INFO: Executed reeferUnplugged4Hours with output:   
+[2024-06-06 14:13:07] local.INFO: Executed reeferUnplugged4Hours with output:   
+[2024-06-06 14:13:07] local.INFO: Executed reeferUnplugged4Hours with output:   
+[2024-06-06 14:13:07] local.INFO: CheckReefers command completed  
+[2024-06-06 14:13:18] local.INFO: CheckReefers command started  
+[2024-06-06 14:13:18] local.INFO: Executed reeferReadyForLoading with output:   
+[2024-06-06 14:13:18] local.INFO: Executed reeferReadyForLoading with output:   
+[2024-06-06 14:13:18] local.INFO: Executed reeferReadyForLoading with output:   
+[2024-06-06 14:13:18] local.INFO: Executed reeferReadyForLoading with output:   
+[2024-06-06 14:13:20] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:13:22] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:13:24] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:13:24] local.INFO: CheckReefers command completed  
+[2024-06-06 14:14:13] local.INFO: CheckReefers command started  
+[2024-06-06 14:14:15] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:14:17] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:14:20] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:14:22] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:14:24] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:14:26] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:14:29] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:14:29] local.INFO: CheckReefers command completed  
+[2024-06-06 14:26:51] local.INFO: CheckReefers command started  
+[2024-06-06 14:26:53] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:26:55] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:26:57] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:26:59] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:27:01] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:27:03] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:27:05] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:27:05] local.INFO: CheckReefers command completed  
+[2024-06-06 14:29:37] local.ERROR: Command "php" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"php\" is not defined. at C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php:704)
+[stacktrace]
+#0 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php(260): Symfony\\Component\\Console\\Application->find('php')
+#1 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\symfony\\console\\Application.php(169): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(196): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1187): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\fahim\\OneDrive\\Documents\\PFE\\Reefer_App_Backend\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2024-06-06 14:29:55] local.INFO: CheckReefers command started  
+[2024-06-06 14:29:57] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:29:59] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:30:01] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:30:03] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:30:05] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:30:07] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:30:09] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:30:09] local.INFO: CheckReefers command completed  
+[2024-06-06 14:39:40] local.INFO: CheckReefers command started  
+[2024-06-06 14:39:42] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:39:44] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:39:46] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:39:48] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:39:50] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:39:52] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:39:54] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:39:54] local.INFO: CheckReefers command completed  
+[2024-06-06 14:56:02] local.INFO: CheckReefers command started  
+[2024-06-06 14:56:04] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:56:06] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:56:08] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:56:10] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:56:12] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:56:14] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:56:16] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:56:16] local.INFO: CheckReefers command completed  
+[2024-06-06 14:57:03] local.INFO: CheckReefers command started  
+[2024-06-06 14:57:05] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:57:07] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:57:09] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:57:11] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:57:13] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:57:15] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:57:17] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:57:17] local.INFO: CheckReefers command completed  
+[2024-06-06 14:58:03] local.INFO: CheckReefers command started  
+[2024-06-06 14:58:05] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:58:06] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:58:09] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:58:10] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:58:12] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:58:14] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:58:16] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:58:16] local.INFO: CheckReefers command completed  
+[2024-06-06 14:59:02] local.INFO: CheckReefers command started  
+[2024-06-06 14:59:04] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:59:06] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:59:08] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:59:10] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 14:59:12] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:59:14] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:59:16] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 14:59:16] local.INFO: CheckReefers command completed  
+[2024-06-06 15:00:02] local.INFO: CheckReefers command started  
+[2024-06-06 15:00:04] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 15:00:06] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 15:00:08] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 15:00:10] local.INFO: Executed reeferReadyForLoading with output: Email sent successfully!
+  
+[2024-06-06 15:00:13] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 15:00:16] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 15:00:18] local.INFO: Executed reeferUnplugged4Hours with output: Email sent successfully!
+  
+[2024-06-06 15:00:18] local.INFO: CheckReefers command completed  

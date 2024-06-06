@@ -13,5 +13,6 @@ Route::group(
 
         Route::post('/issues/add', [IssueController::class, 'add']);
         Route::get('/issues', [IssueController::class, 'index']);
+        Route::post('/issues/firstTier', [IssueController::class, 'firstTier']);
     }
 );

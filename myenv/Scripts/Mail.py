@@ -1,6 +1,8 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import sys
+import argparse
 
 def send_email(sender_email, sender_password, recipient_email, subject, body):
     # SMTP server configuration
@@ -36,8 +38,16 @@ def send_email(sender_email, sender_password, recipient_email, subject, body):
 # Usage example
 sender_email = 'fahimimouad60@gmail.com'
 sender_password = 'pwce slqh qcve mwmb'
-recipient_email = 'fahimimouad60@gmail.com'
+# recipient_email = 'fahimimouad60@gmail.com'
 subject = 'Reefer App - Notification'
-body = 'This reefer is unplugged and its load time is in more than 4 hours.'
+# body = 'This reefer is unplugged and its load time is in more than 4 hours.'
+
+parser = argparse.ArgumentParser(description='Process some parameters.')
+parser.add_argument('--recipient_email', type=str, required=True, help='The first parameter')
+parser.add_argument('--body', type=str, required=True, help='The second parameter')
+args = parser.parse_args()
+# Access the parameters
+recipient_email = args.recipient_email
+body = args.body
 
 send_email(sender_email, sender_password, recipient_email, subject, body)
