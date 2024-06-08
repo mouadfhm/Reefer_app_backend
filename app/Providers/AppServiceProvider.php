@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Modules\Load\Models\Load;
+use App\Observers\estimatedTimeChanged;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -20,5 +22,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         //
+        Load::observe(estimatedTimeChanged::class);
     }
 }

@@ -25,4 +25,7 @@ class Issue extends Model
     {
         return $this->belongsTo(Reefer::class);
     }
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d H:m:s',
+    ];
 }

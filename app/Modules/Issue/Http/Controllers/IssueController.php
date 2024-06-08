@@ -3,6 +3,7 @@
 namespace App\Modules\Issue\Http\Controllers;
 
 use App\Modules\Issue\Models\Issue;
+use App\Modules\User\Models\User;
 use Illuminate\Http\Request;
 
 class IssueController
@@ -20,7 +21,9 @@ class IssueController
     public function index()
     {
         try {
-            $issues = Issue::all();
+            $issues = Issue::with(['reefer.actionHistory','reefer.loads'=> function ($query) {
+                $query->orderBy('estimated_time', 'asc');
+            }])->get();
             return [
                 "payload" => $issues,
                 "status" => 200
@@ -61,16 +64,22 @@ class IssueController
             ];
         }
     }
-    public function firstTier(Request $request)
-    {
-
-        $param1 = 'fahimimouad60@gmail.com';
-        $param2 = 'This reefer ' . $request->reefer_id . ' has an issue : ' . $request->type . '. Please check it.';
-        try {
-            $command = escapeshellcmd("python3 ../myenv/Scripts/Mail.py --recipient_email $param1 --body " . escapeshellarg($param2));
-            $output = shell_exec($command);
+    public function deleteIssue(Request $request){
+        $rules = [
+            'id' => 'required',
+        ];
+        $validator = Validator($request->all(), $rules);
+        if ($validator->fails()) {
             return [
-                "payload" => $output,
+                "error" => $validator->errors()->all(),
+                "status" => 422
+            ];
+        }
+        try {
+            $issue = Issue::find($request->id);
+            $issue->delete();
+            return [
+                "payload" => $issue,
                 "status" => 200
             ];
         } catch (\Exception $e) {
@@ -78,6 +87,48 @@ class IssueController
                 "error" => $e->getMessage(),
                 "status" => 500
             ];
+        }
+    }
+    public function firstTier(Request $request)
+    {
+        $emails = User::all()->pluck('email')->toArray();
+        foreach ($emails as $email) {
+            $param1 = $email;
+            $param2 = 'This reefer ' . $request->reefer_id . ' has an issue : ' . $request->type . '. Please check it.';
+            try {
+                $command = escapeshellcmd("python3 ../myenv/Scripts/Mail.py --recipient_email $param1 --body " . escapeshellarg($param2));
+                $output = shell_exec($command);
+                return [
+                    "payload" => $output,
+                    "status" => 200
+                ];
+            } catch (\Exception $e) {
+                return [
+                    "error" => $e->getMessage(),
+                    "status" => 500
+                ];
+            }
+        }
+    }
+    public function issueFixedMail(Request $request)
+    {
+        $emails = User::all()->pluck('email')->toArray();
+        foreach ($emails as $email) {
+            $param1 = $email;
+            $param2 = 'The issue : "' . $request->type . '" in the reefer : ' . $request->reefer_id . ', has been fixed.';
+            try {
+                $command = escapeshellcmd("python3 ../myenv/Scripts/Mail.py --recipient_email $param1 --body " . escapeshellarg($param2));
+                $output = shell_exec($command);
+                return [
+                    "payload" => $output,
+                    "status" => 200
+                ];
+            } catch (\Exception $e) {
+                return [
+                    "error" => $e->getMessage(),
+                    "status" => 500
+                ];
+            }
         }
     }
 }

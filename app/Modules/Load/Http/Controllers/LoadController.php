@@ -49,10 +49,22 @@ class LoadController
         }
 
         try {
-            $loads = Load::where('vessel_id', $request->vessel_id,)->with(['reefer', 'reefer.actionHistory' => function ($query) {
+            //this query is just for testing:
+            $loads = Load::where('vessel_id', $request->vessel_id, )->with(['reefer', 'reefer.actionHistory' => function ($query) {
                 $query->orderBy('created_at', 'desc');
-            }])
-                ->get();
+            }])->get();
+            
+            // this is the corect query:
+            // $loads = Load::where('vessel_id', $request->vessel_id)
+            //     ->with([
+            //         'reefer',
+            //         'reefer.actionHistory' => function ($query) {
+            //             $query->where('estimated_time', '>', now())
+            //                 ->orderBy('created_at', 'desc');
+            //         }
+            //     ])
+            //     ->get();
+
             return [
                 "payload" => $loads,
                 "status" => 200
@@ -64,5 +76,4 @@ class LoadController
             ];
         }
     }
-
 }
