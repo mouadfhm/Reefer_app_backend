@@ -49,22 +49,18 @@ class LoadController
         }
 
         try {
-            //this query is just for testing:
-            $loads = Load::where('vessel_id', $request->vessel_id, )->with(['reefer', 'reefer.actionHistory' => function ($query) {
-                $query->orderBy('created_at', 'desc');
-            }])->get();
-            
-            // this is the corect query:
-            // $loads = Load::where('vessel_id', $request->vessel_id)
-            //     ->with([
-            //         'reefer',
-            //         'reefer.actionHistory' => function ($query) {
-            //             $query->where('estimated_time', '>', now())
-            //                 ->orderBy('created_at', 'desc');
-            //         }
-            //     ])
-            //     ->get();
 
+            $loads = Load::where('vessel_id', $request->vessel_id)
+                ->where('estimated_time', '>', now()) // Filter based on estimated_time in Load
+                ->with([
+                    'reefer',
+                    'reefer.actionHistory' => function ($query) {
+                        $query->orderBy('created_at', 'desc'); // Assuming you still want to order actionHistory by created_at
+                    }
+                ])
+                ->orderBy('estimated_time', 'asc') // Order the loads by estimated_time
+                ->get();
+            
             return [
                 "payload" => $loads,
                 "status" => 200
