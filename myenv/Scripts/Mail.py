@@ -36,11 +36,9 @@ def send_email(sender_email, sender_password, recipient_email, subject, body):
         server.quit()
 
 # Usage example
-sender_email = 'fahimimouad60@gmail.com'
-sender_password = 'pwce slqh qcve mwmb'
-# recipient_email = 'fahimimouad60@gmail.com'
+sender_email = 'mail@gmail.com'
+sender_password = 'password'
 subject = 'Reefer App - Notification'
-# body = 'This reefer is unplugged and its load time is in more than 4 hours.'
 
 parser = argparse.ArgumentParser(description='Process some parameters.')
 parser.add_argument('--recipient_email', type=str, required=True, help='The first parameter')
