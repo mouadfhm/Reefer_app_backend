@@ -91,10 +91,10 @@ class IssueController
     }
     public function firstTier(Request $request)
     {
-        $emails = User::all()->pluck('email')->toArray();
+        $emails = User::all()->pluck('email')->toArray();//should be yard planner mail
         foreach ($emails as $email) {
             $param1 = $email;
-            $param2 = 'This reefer ' . $request->reefer_id . ' has an issue : ' . $request->type . '. Please check it.';
+            $param2 = 'This reefer ' . $request->reefer_id . ' has an issue : ' . $request->type . ' should be moved to first tier. Please check it.';
             try {
                 $command = escapeshellcmd("python3 ../myenv/Scripts/Mail.py --recipient_email $param1 --body " . escapeshellarg($param2));
                 $output = shell_exec($command);
@@ -109,6 +109,47 @@ class IssueController
                 ];
             }
         }
+    }
+    public function firstTierConfimed(Request $request)
+    {
+        $emails = User::all()->pluck('email')->toArray();//should be tech team mail
+        $verb = $request->first_tier === 'false' ? 'moved to' : 'removed from';
+        foreach ($emails as $email) {
+            $param1 = $email;
+            $param2 = ' The issue : ' . $request->type . ' in this reefer ' . $request->reefer_id . ' has been '.$verb.' first tier.';
+            try {
+                $command = escapeshellcmd("python3 ../myenv/Scripts/Mail.py --recipient_email $param1 --body " . escapeshellarg($param2));
+                $output = shell_exec($command);
+                return [
+                    "payload" => $output,
+                    "status" => 200
+                ];
+            } catch (\Exception $e) {
+                return [
+                    "error" => $e->getMessage(),
+                    "status" => 500
+                ];
+            }
+        }
+    }
+    public function moveToFirstTier(Request $request)
+    {
+        $issue = Issue::find($request->id);
+        try {
+            $issue->first_tier = $issue->first_tier === 'true' ? 'false' : 'true';
+            $issue->save();
+            return [
+                "payload" => $issue,
+                "status" => 200
+            ];
+
+        } catch (\Exception $e) {
+            return [
+                "payload" => $issue,
+                "status" => 500
+            ];
+        }
+
     }
     public function issueFixedMail(Request $request)
     {

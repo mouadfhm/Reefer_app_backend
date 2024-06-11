@@ -19,7 +19,8 @@ class Issue extends Model
      */
     protected $fillable = [
         'reefer_id',
-        'type'
+        'type',
+        'first_tier'
     ];
     public function reefer()
     {

@@ -15,7 +15,9 @@ Route::group(
         Route::get('/issues', [IssueController::class, 'index']);
         Route::post('/issues/delete', [IssueController::class, 'deleteIssue']);
         Route::post('/issues/issueFixedMail', [IssueController::class, 'issueFixedMail']);
+        Route::post('/issues/movetofirsttier', [IssueController::class, 'moveToFirstTier']);
         Route::post('/issues/firstTier', [IssueController::class, 'firstTier']);
+        Route::post('/issues/firstTierConfirmed', [IssueController::class, 'firstTierConfimed']);
     
     }
 );
